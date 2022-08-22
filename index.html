@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/reset.css"> 
+  <link rel="stylesheet" href="/css/styles.css"> 
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="column header">
+        <div class="profil">
+          <div class="profil__container">
+            <img class="profil__image" src="/images/image-jeremy.png" alt="jeremy image">
+            <div class="profil__description"></div>
+            <p class="profil__description-report">Report for</p>
+            <p class="profil__description-name">Jeremy Robson</p>
+          </div>
+        </div>
+        <div class="period">
+          <ul id="periodList">
+            <li><a id="daily" href="#">Daily</a></li>
+            <li><a id="weekly" href="#">Weekly</a></li>
+            <li><a id="monthly" href="#">Monthly</a></li>
+          </ul>
+        </div>
+    </div>
+    <div class="column card">
+      <div class="card__banner work">
+        <img class="card__banner-logo" src="/images/icon-work.svg" alt="logo sac">
+        <div class="card__detail-container">
+          <div class="card__detail">
+            <div class="card__detail-tag">
+              <h2 class="card__detail-title">Work</h2>
+              <a href="#">...</a>
+            </div>
+            <p class="card__detail-current">5hrs</p>
+            <p class="card__detail-previous">Last Week - 7hrs</p>
+          </div>
+        </div>
+      </div>
+      <div class="card__banner exercise">
+        <img class="card__banner-logo" src="/images/icon-exercise.svg" alt="logo man running">
+        <div class="card__detail-container">
+          <div class="card__detail">
+            <div class="card__detail-tag">
+              <h2 class="card__detail-title">Exercise</h2>
+              <a href="#">...</a>
+            </div>
+            <p class="card__detail-current">1hrs</p>
+            <p class="card__detail-previous">Last Week - 1hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column card">
+      <div class="card__banner play">
+        <img class="card__banner-logo" src="/images/icon-play.svg" alt="logo gaming controller">
+        <div class="card__detail-container">
+          <div class="card__detail">
+            <div class="card__detail-tag">
+              <h2 class="card__detail-title">Play</h2>
+              <a href="#">...</a>
+            </div>
+            <p class="card__detail-current">1hrs</p>
+            <p class="card__detail-previous">Last Week - 2hrs</p>
+          </div>
+        </div>
+      </div>
+      <div class="card__banner social">
+        <img class="card__banner-logo" src="/images/icon-social.svg" alt="logo social">
+        <div class="card__detail-container">
+          <div class="card__detail">
+            <div class="card__detail-tag">
+              <h2 class="card__detail-title">Social</h2>
+              <a href="#">...</a>
+            </div>
+            <p class="card__detail-current">1hrs</p>
+            <p class="card__detail-previous">Last Week - 3hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column card">
+      <div class="card__banner study">
+        <img class="card__banner-logo" src="/images/icon-study.svg" alt="logo book">
+        <div class="card__detail-container">
+          <div class="card__detail">
+            <div class="card__detail-tag">
+              <h2 class="card__detail-title">Study</h2>
+              <a href="#">...</a>
+            </div>
+            <p class="card__detail-current">0hrs</p>
+            <p class="card__detail-previous">Last Week - 1hrs</p>
+          </div>
+        </div>
+      </div>
+      <div class="card__banner self-care">
+        <img class="card__banner-logo" src="/images/icon-self-care.svg" alt="logo heart">
+        <div class="card__detail-container">
+          <div class="card__detail">
+            <div class="card__detail-tag">
+              <h2 class="card__detail-title">Self Care</h2>
+              <a href="#">...</a>
+            </div>
+            <p class="card__detail-current">0hrs</p>
+            <p class="card__detail-previous">Last Week - 1hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+ 
+  <script type="module" src="/js/index.js"></script>
+  
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
